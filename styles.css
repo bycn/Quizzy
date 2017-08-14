@@ -1,0 +1,273 @@
+body {
+    background: white;
+    margin: 0;
+}
+
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 40px;
+    color: white;
+}
+h3{
+    margin-bottom: 40px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    
+    font-weight: 500;
+    font-size: 30px;
+}
+p{
+    
+    margin-bottom: 40px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    
+    font-weight: 200;
+    font-size: 20px;
+}
+.dotLink{
+text-decoration: none;
+    color: white	;
+    border-bottom: dotted 1px;
+}
+#title{
+font-family: 'Raleway', sans-serif;
+margin-bottom: 0;
+border-bottom: solid 10px;
+max-width: 57%;
+}
+.aboutIcon{
+    color: white;
+}
+.button{
+      padding: 8px 25px 8px 25px ;
+    border-radius: 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+}
+#downloadButton{
+    background: #6ed3cf;
+    background-color: #ff6666;
+    color:white;
+}
+#downloadButton:hover {
+    background: #6ed3cf;
+}
+.block {
+    margin-left: 5%;
+}
+.intro{    
+    margin-top: 14%;
+}
+footer{
+      position:fixed;
+    bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    left: 38%;
+}
+.fa-heart{
+    color: white;
+}
+/* stuff for landing.html */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.items{
+    float: right;
+ display: block;
+    text-align: center;
+    padding: 14px 16px;
+margin-top: 1.5%;
+    margin-right: 1.5%;
+}
+li a  {
+    text-decoration: none;
+    color: white ;
+    padding-right: 5%;
+}
+nav {
+     font-family: 'Raleway', sans-serif;
+     position:fixed;
+    font-size: 20px;
+     transition: all 0.75s ease;
+     border-bottom: 1px solid #fff;
+    text-align: right;
+    z-index: 9999;
+    top:0;
+    left:0;
+    right:0;
+    background-color: transparent;
+    padding-bottom:10px;
+}
+
+#logo a{
+    font-size: 32px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: white;
+    letter-spacing: 2px;
+}
+#center{
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    width: 40%;
+    letter-spacing: 1px;
+        margin-top: 12%;
+    margin-left: 10%;
+}
+#top{
+    margin-bottom: 0;
+    color: white;
+    margin-top: 25%;
+}
+#up{
+    margin-top: 10px;
+text-decoration: underline;
+    margin-bottom: 0;
+    color: white;
+}
+#down{
+    margin-top: 5%;
+    color: 	#6ed3cf;
+    font-weight: 800;
+}
+#iphone{
+    min-height: 400px;
+    max-height: 450px;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-top: 5%;
+
+}
+#container{
+    padding-bottom: 200px;
+    background-image: url("background.jpeg");
+  background-repeat:no-repeat;
+
+   background-size:cover;}
+ .clear {
+          clear: both;
+ }
+#about {
+    background: #9068be;
+    padding-bottom: 300px;
+    padding-top: 250px;
+    text-align: center;
+}
+.minititle{
+    text-decoration: underline;
+    color: #e1e8f0;
+}
+#download {
+    background: #6ed3cf;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+#contact {
+    background: #e1e8f0;
+    padding-bottom: 200px;
+    padding-top: 150px;
+    text-align: center;
+    padding-left: 25%;
+}
+#aboutButton{
+    background: #e62739;
+    color: black;
+}
+#contactButton{
+    background: green;
+    color: black;
+}
+#tryButton{
+    background-color: aliceblue;
+    border: solid 2px #6ed3cf;
+}
+#tryButton:hover{
+    border: solid 2px lightskyblue;
+}
+.column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
+
+.desc{
+    color: #e1e8f0;
+}
+.downDesc{
+       font-family: 'Raleway', sans-serif;
+}
+.half-left{
+    float: left;
+    width: 40%;
+    margin-left: 15%;
+}
+.half-right{
+    float: right;
+    margin-right: 20%;
+    margin-top:5%
+}
+ 
+#placement{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;   
+    margin-top: 20%;
+}
+/*social stuff*/
+#popupSocialbuttoncontainer {
+  margin:0 auto; padding:0;
+
+}
+#popupSocialbuttons {
+  padding-left: 9%;
+  overflow:hidden;
+}
+.popupSocialbutton {
+  background:#DCE0E0;
+  position:relative;
+  float:left;
+  height:40px; width:150px;
+  margin:5px;
+  overflow:hidden;
+  border-radius:3px;
+}
+.popupSocialicon {
+  float:left;
+  width:38px; height:100%;
+  border-radius:3px 0px 0px 3px;
+  text-align:center;
+}
+.popupSocialicon i.fa {color:#fff; line-height:42px;}
+
+.popupSocialslide {
+  height:100%; width:112px;
+  position:absolute; right:0; top:0; z-index:2;
+  text-align:center;
+  border-radius:0 3px 3px 0;
+  transition:all 0.2s ease-in-out;
+}
+.popupSocialslide p {
+  font:normal 400 16px/1.5 'Open Sans', sans-serif; color:#fff;
+  border-left:1px solid #ccc;
+  margin-top:8px;
+}
+
+.popupSocialcount {
+  height:100%; width:112px;
+  position:absolute; right:0; top:0; z-index:1;
+  border-radius:0 3px 3px 0;
+  text-align:center;
+}
+.popupSocialcount iframe {margin:10px!important;}
+
+.popupSocialbutton:hover .popupSocialslide {right:-112px;}
+
+.popupSocial-facebook .popupSocialicon, .popupSocial-facebook .popupSocialslide {background:#305c99;}
+.popupSocial-twitter .popupSocialicon, .popupSocial-twitter .popupSocialslide {background:#00cdff;}
+.popupSocial-google .popupSocialicon, .popupSocial-google .popupSocialslide {background:#d24228;}
+/*end*/

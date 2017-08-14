@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analyze a document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src='jcrop/js/jquery.Jcrop.js'></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="analyze.css">
+    <link href='jcrop/css/jquery.Jcrop.css' rel='stylesheet' type='text/css'>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="logo"><a href="index.html">QUIZZY</a></li>
+        </ul>
+    </nav>
+    <h1 id="statusMessage">Welcome to Quizzy, <span id="loggedOut">you're not logged in yet</span><span id="loggedIn"></span></h1>
+    <h2>Step 1: Make a quizlet account or log in:  <a id="userInfoButton"><button id="openButton" class="button"><i class="fa fa-user" aria-hidden="true"></i>  Open quizlet</button></a></h2>
+    <br>
+    <h2>Step 2:
+        <div id="drop-zone">
+    Drop your vocab pic here...
+    <div id="clickHere" class=".button">
+        or click here..
+        <input type="file" name="file" id="files" />
+    </div>
+        </div>	
+	 </h2>
+    <h5>images should look somehwat like those below: minimize whitespace and text that is not terms/defs by cropping</h5>
+    <h2 id="scrollId">Example images: <a download="frenchvocab.png" href="frenchvocab.png" title="french vocab"><img style="height: 80px; width: 80px" src="frenchvocab.png"></a>  <a download="stats-vocab.png" href="stats-vocab.png" title="stats vocab"><img src="stats-vocab.png" style="height: 80px; width: 80px"></a></h2>
+
+
+    <h2 style="margin-top:60px">Step 3: Choose a title  <input class="gate" placeholder="choose a title" id="newtitleset" type="text" name="title" style="padding-right:10px;"></h2>
+
+    <h5>(optional-in case you want to crop to make it more accurate)</h5>
+    <a id="startcropping"><button class="button">Start cropping</button></a>
+    <!-- <a id="cropimage"><button class="button">Crop image</button></a> -->
+    <br>
+    <br>
+    <a id="newset"><button id="createButton" class="emerald-flat-button">Create set</button></a>
+
+
+
+    <div id="confirmed"></div>
+    <canvas id="canvas2"></canvas>
+    <canvas id="viewport" width="602" height="500"></canvas>
+
+
+</body>
+
+<script>
+    $(window).on('scroll', function() {
+        console.log('scrolling')
+        var stop = Math.round($(window).scrollTop());
+        if (stop > 50) {
+            $('nav').css({
+                "height": "30px",
+                "font-size": "10px",
+                "background-color": "#34495e",
+                "color": "white"
+            })
+            $('#logo').css({
+                "font-size": "10px",
+                "color": "white"
+            })
+            $('.items').css({
+                "padding": "0px",
+                "color": "white"
+            })
+
+        } else {
+            $('nav').css({
+                "background-color": "transparent",
+                "font-size": "20px",
+                "height": "70px"
+            });
+            $('#logo').css("font-size", "32px")
+
+        }
+
+    });
+</script>
+
+</html>

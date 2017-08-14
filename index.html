@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quizzy</title>
+
+    <!--css links-->
+    <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+    <link href="styles.css" rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="smooth-scroll.min.js"></script>
+    <script>
+        if ($(window).width() < 1024) {
+            $(function() {
+                jQuery.fx.off = true;
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li id="logo"><a href="index.html">QUIZZY</a></li>
+            <li class="items"><a data-scroll href="#contact">contact</a></li>
+            <li class="items"><a data-scroll href="#download">download</a></li>
+            <li class="items"><a data-scroll href="#about">about</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="center">
+            <h2 id="top">We get it,</h2>
+            <h2 id="up">Vocab sheets suck.</h2>
+            <h2 id="down">Use Quizzy.</h2>
+            <a data-scroll href="#about" id="downloadButton" class="button"><i class="fa fa-arrow-down"></i> LEARN MORE</a>
+        </div>
+        <img id="iphone" src="editLater.png">
+        <div class="clear"></div>
+    </div>
+
+    <div id="about">
+        <div class="column-left">
+            <i class="aboutIcon fa fa-sign-in fa-4x"></i>
+            <h3 class="minititle">log into quizlet</h3>
+            <p class="desc">Make an account or use a pre-existing one at <a target="newtab" href="http://quizlet.com">quizlet.com</a></p>
+        </div>
+        <div class="column-center">
+            <i class="aboutIcon fa fa-camera fa-4x"></i>
+            <h3 class="minititle">take a picture</h3>
+            <p class="desc">Scan in a vocabulary sheet with terms and definitions. We have pre-existing templates that your sheet should fit into.</p>
+            <a id="aboutButton" data-scroll class="button" href="#download">GREAT!</a>
+        </div>
+        <div class="column-right">
+            <i class="aboutIcon fa fa-book fa-4x"></i>
+            <h3 class="minititle">study.</h3>
+            <p class="desc">Our app translates your image into text. Then we automate the task of entering each term and definition, giving you a ready-to-study set in seconds.</p>
+        </div>
+    </div>
+    <div id="download">
+        <div id="dContent">
+            <div class="half-left">
+                <h2 class="downDesc">Get QUIZZY now:</h2>
+            </div>
+            <div class="half-right">
+                <a id="tryButton" class="button" href="analyze.html">
+            quizzy beta (online)
+            </a>
+            </div>
+
+        </div>
+        <div id="placement">
+
+        </div>
+    </div>
+    <!--buttons by "https://codepen.io/menightfury/pen/BNzwWN", thank you!-->
+    <div id="contact">
+        <div id="popupSocialbuttons">
+            <div class="popupSocial-facebook popupSocialbutton">
+                <div class="popupSocialicon"><i class="fa fa-facebook"></i></div>
+                <div class="popupSocialslide">
+                    <p>facebook</p>
+                </div>
+                <div class="popupSocialcount">
+                    <!--   <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fbloganalyzer.nightfury&send=false&layout=button_count&width=80&show_faces=false&font&colorscheme=light&action=like&height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:20px;"
+            allowTransparency="true"></iframe>!-->WIP
+                </div>
+            </div>
+
+            <div class="popupSocial-twitter popupSocialbutton">
+                <div class="popupSocialicon"><i class="fa fa-twitter"></i></div>
+                <div class="popupSocialslide">
+                    <p>twitter</p>
+                </div>
+                <div class="popupSocialcount">
+                    <!--    <a class="twitter-follow-button" href="https://twitter.com/menightfury" data-show-screen-name="false">Follow</a>
+            <script type="text/javascript">
+              !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;
+                  js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script> !-->WIP
+                </div>
+            </div>
+            <div class="popupSocial-google popupSocialbutton">
+                <div class="popupSocialicon"><i class="fa fa-google-plus"></i></div>
+                <div class="popupSocialslide">
+                    <p>google+</p>
+                </div>
+                <div class="popupSocialcount">
+                    <!--  <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" data-href="https://plus.google.com/+BloganalyzerBlogspot"></div>
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>!-->WIP
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <footer>
+        made with <i class="heart fa fa-heart"></i> by <a class="dotLink" href="http://bryanchen.ml">bryan</a> and <a class="dotLink" href="https://kushaltirumala.github.io">kushal</a>
+    </footer>
+
+</body>
+<script>
+    $(document).ready(function() {
+        smoothScroll.init();
+
+        var mainbottom = $('#container').height();
+        console.log(mainbottom)
+        $(window).on('scroll', function() {
+            console.log('scrolling')
+            var stop = Math.round($(window).scrollTop());
+
+            if (stop > mainbottom) {
+                $('nav').css("background-color", "#9068be")
+            } else {
+                $('nav').css("background-color", "transparent");
+            }
+
+        });
+    })
+</script>
+
+</html>
